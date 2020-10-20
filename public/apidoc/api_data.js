@@ -5,7 +5,7 @@ define({ "api": [
     "title": "获取组件文件",
     "description": "<p>获取组件文件</p>",
     "name": "getFile",
-    "group": "User",
+    "group": "File",
     "parameter": {
       "fields": {
         "Parameter": [
@@ -46,6 +46,6 @@ define({ "api": [
     ],
     "version": "1.0.0",
     "filename": "routes/files/getFile.js",
-    "groupTitle": "User"
+    "groupTitle": "File"
   }
 ] });
