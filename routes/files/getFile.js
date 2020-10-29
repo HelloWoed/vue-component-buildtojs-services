@@ -18,8 +18,8 @@ const fs = require('fs');
  *          "password" : "loginPass"
  *      }
  *  }
- * @apiSampleRequest http://localhost:3000/api/user/submit-login
- * @apiVersion 1.0.0
+ * @apiSampleRequest http://localhost:3000/files/getFile
+ * @apiVersion 0.1.0
  */
 router.get('/', function(req, res, next) {
     let fileName = req.query.name;
