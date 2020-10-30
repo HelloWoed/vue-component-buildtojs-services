@@ -14,15 +14,14 @@ const fs = require('fs');
  *  {
  *      "success" : "true",
  *      "result" : {
- *          "name" : "loginName",
- *          "password" : "loginPass"
+ *          
  *      }
  *  }
  * @apiSampleRequest http://localhost:3000/files/getFile
  * @apiVersion 0.1.0
  */
 router.get('/', function(req, res, next) {
-    let fileName = req.query.name;
+    let fileName = req.query.fileName;
     let filePath = path.join(__dirname,`../../public/components/${fileName}.js`);
     if(fs.existsSync(filePath)){
         res.sendFile(filePath, `${fileName}.js`);

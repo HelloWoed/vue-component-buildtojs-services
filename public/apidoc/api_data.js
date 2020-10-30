@@ -34,7 +34,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"success\" : \"true\",\n    \"result\" : {\n        \"name\" : \"loginName\",\n        \"password\" : \"loginPass\"\n    }\n}",
+          "content": "{\n    \"success\" : \"true\",\n    \"result\" : {\n        \n    }\n}",
           "type": "json"
         }
       ]
