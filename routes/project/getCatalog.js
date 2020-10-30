@@ -49,6 +49,13 @@ const parseCatalog = (cataData, cataPath, acceptData) => {
 router.get('/', function(req, res, next) {
     let catalog = [];
     let projectName = req.query.projectName;
+    if(!projectName){
+        res.json({
+            code: 204,
+            message: '缺失 项目名称参数 '
+        });
+        return false;
+    }
     let rootPath = `../../public/projects/${projectName}`;
     let projPath = path.join(__dirname, rootPath);
     if(fs.existsSync(projPath)){
